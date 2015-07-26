@@ -1,7 +1,7 @@
 
 package com.sigaf.model;
 
-import java.sql.Date;
+import java.sql.Timestamp;
 import java.util.Objects;
 
 /**
@@ -10,24 +10,24 @@ import java.util.Objects;
  */
 public class SourceTable {
     
-    private Date timeMin;
+    private Timestamp timeMin;
     private Integer iDVariable;
     private Float value;
 
     public SourceTable() {
     }
 
-    public SourceTable(Date timeMin, Integer iDVariable, Float value) {
+    public SourceTable(Timestamp timeMin, Integer iDVariable, Float value) {
         this.timeMin = timeMin;
         this.iDVariable = iDVariable;
         this.value = value;
     }
 
-    public Date getTimeMin() {
+    public Timestamp getTimeMin() {
         return timeMin;
     }
 
-    public void setTimeMin(Date timeMin) {
+    public void setTimeMin(Timestamp timeMin) {
         this.timeMin = timeMin;
     }
 

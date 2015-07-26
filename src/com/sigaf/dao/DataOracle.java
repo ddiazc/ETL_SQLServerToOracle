@@ -26,7 +26,7 @@ public class DataOracle {
             int i = getLastID(tableName, connect);
             for (SourceTable item : listOfRecords) {
                 preparedStatement.setInt(1, ++i);
-                preparedStatement.setDate(2, item.getTimeMin());
+                preparedStatement.setTimestamp(2, item.getTimeMin());
                 preparedStatement.setInt(3, 1);
                 preparedStatement.setInt(4, item.getiDVariable());
                 preparedStatement.setFloat(5, item.getValue());
